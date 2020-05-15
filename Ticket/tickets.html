@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Jason's theatre ticket</title>
+    <meta name="description" content="Online Ticket Machine">
+    <meta name="keywords" content="fun">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="ticketsStyle.css">
+
+</head>
+
+<body>
+
+		<script async src="tickets.js"></script>
+<h2>Theatre Tickets</h2>
+<!-- Name, Address and tickets -->
+<form onsubmit="return false">
+
+  <label for="name">Name</label><br>
+  <input type="text" id="name" name="name" placeholder="Enter name here" required /><br>
+  <label for="address">Address</label><br>
+  <input type="text" id="address" name="address" placeholder="Enter Address here" required /><br>
+  <label for="tickets">Number of tickets</label><br>
+  <input type="number"  id="tickets" name="Tickets"placeholder="Enter amount of tickets"min="0" required /><br>
+  </label>
+  
+  <!-- Selecting your show -->
+  
+  <label for="show">Shows</label><br>
+  <select id="show" required>
+  <option value="N/A">N/A</option>
+   <option value="Lion King">Lion King £67</option>
+  <option value="Miss Saigon">Miss Saigon £83</option>
+  <option value="Hamilton">Hamilton £85</option>
+  <option value="Phantom of the opera">Phantom of the opera £79</option>
+  </select>
+  <!-- Select delivery method -->
+  <br><br>
+  <input type="radio" id="e-delivery (free)" name="method" value="e-delivery (free)">
+  <label for="edelivery">e-Delivery (free)</label>
+  <input type="radio" id="posted" name="method" value="Posted (£3.99)">
+  <label for="posted">Posted (£3.99)</label>
+  <input type="radio" id="boxoffice" name="method" value="Box Office (£1.50)">
+  <label for="boxoffice">Box Office (£1.50) </label>
+  <br><br>
+  <input type="submit" onclick="displayDetails()" value="Submit" />
+</form>
+ <br><br>
+  </div>
+          <br><br>  
+
+            <!-- displays the imput you place in -->
+            <div id="result">
+                <p id="nameresult"> Name: </p>
+                <p id="addressresult"> Address: </p>
+                <p id="ticketsresult"> Number of tickets:  </p>
+                <p id="showresult"> Show: </p>
+                <p id="methodresult">Method of delivery: </p>
+                <p id="totalresult">Total: </p>
+                <p id="discounttesult">Discount: </p>
+                <p id="finaltotalresult">Final Total: </p>
+            </div>
+
+            </div>
+
+
+</body>
+</html>

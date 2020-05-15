@@ -1,0 +1,70 @@
+body
+{
+	margin: 0;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background: url(images/dark-honeycomb.png) lightgray; 
+	/* Pattern from https://www.toptal.com/designers/subtlepatterns/dark-honeycomb-pattern/ */
+}
+
+#main {
+    display: flex;
+    justify-content: left;
+	/* Changes the tokens and winning size*/ 
+    font-size: 50px;
+
+}
+mains {
+    margin:10px 30px 10px 15px;
+}
+#main p {
+    margin: auto;
+    align-self: center;
+    background-color: pink;
+    border: 5px black solid;
+	border-radius: 5px;
+    padding: 20px;
+	color: rebeccapurple;
+}
+
+.mains {
+	display: flex;
+	flex-direction: column;
+}
+
+#images {
+    display: flex;
+    justify-content: left;
+}
+	/* Changing the border and margin around image*/
+img {
+    margin: 50px 10px 10px 10px;
+    border: 5px black solid;
+	width: 100px;
+}
+
+#buttons {
+    display: flex;
+	/* Button look changes*/
+    justify-content: left;
+}
+
+button {
+    font-size: 20px;
+	font-family: Arial;
+    margin: 5px;
+	border: 5px black solid;
+	border-radius: 2px;
+	/* Button changes from border to text size*/
+    background-color: pink;
+    padding: 30px;
+	color: rebeccapurple;
+}
+
+#message {
+    display: flex;
+	/* Dispalys the message */
+    justify-content: left;
+    font-size: 30px;
+}
+

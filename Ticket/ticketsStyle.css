@@ -1,0 +1,8 @@
+body
+{
+	margin: 0;
+	color: white;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	background: url(images/dark-honeycomb.png) lightgray; 
+	/* Pattern from https://www.toptal.com/designers/subtlepatterns/dark-honeycomb-pattern/ */
+}
